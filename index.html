@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>POP!ulation — Overpopulation Awareness</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="POP!ulation logo" class="logo">
+      <h1>POP!ulation</h1>
+      <p class="tagline">Addressing the Challenge of Overpopulation</p>
+    </div>
+
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="files/problem.html">Problem</a></li>
+        <li><a href="files/involvement.html">Get Involved</a></li>
+        <li><a href="files/contact.html">About / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Overpopulation: Why it matters</h2>
+      <p class="lead">
+        Overpopulation is one of the most pressing issues facing our world today. Demand for food, water,
+        and energy is rising at unsustainable rates, straining ecosystems and communities.
+      </p>
+      <figure class="hero-image">
+        <img src="images/overpopulation-illustration.jpg" alt="Overpopulation illustration">
+        <figcaption>Illustration: population growth & resource pressure</figcaption>
+      </figure>
+    </section>
+
+    <section class="stats" aria-labelledby="stats-title">
+      <h3 id="stats-title">Impacts of Overpopulation (sample statistics)</h3>
+      <table>
+        <thead>
+          <tr><th>Impact</th><th>Global Effect (%)</th><th>Examples</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Resource Depletion</td><td>40%</td><td>Freshwater shortages, deforestation</td></tr>
+          <tr><td>Urban Overcrowding</td><td>35%</td><td>Housing shortages, traffic congestion</td></tr>
+          <tr><td>Waste Generation</td><td>25%</td><td>Plastic pollution, overflowing landfills</td></tr>
+          <tr><td>Food Insecurity</td><td>20%</td><td>Rising prices, malnutrition</td></tr>
+          <tr><td>Environmental Damage</td><td>30%</td><td>Loss of biodiversity, climate change</td></tr>
+        </tbody>
+      </table>
+      <p class="call">Join us in spreading awareness and supporting sustainable solutions.</p>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <h3 id="cta-title">Get involved</h3>
+      <p>Learn more about the problem or discover ways to help:</p>
+      <div class="cta-buttons">
+        <a class="btn" href="files/problem.html">Learn the Problem</a>
+        <a class="btn ghost" href="files/involvement.html">Ways to Help</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-left">
+      <p>&copy; <span id="year"></span> POP!ulation — Student Advocacy</p>
+      <p class="small">Location: Davao City, Philippines</p>
+    </div>
+
+    <div class="footer-right" aria-hidden="false">
+      <!-- sprite-based social icons -->
+      <div class="social-sprite">
+        <a class="icon" href="#" aria-label="Facebook"></a>
+        <a class="icon" href="#" aria-label="Twitter"></a>
+        <a class="icon" href="#" aria-label="Instagram"></a>
+      </div>
+      <p class="small">Email: pop.advocacy@gmail.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script for footer year and simple accessibility
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // keyboard focus styling helper (adds class when using keyboard)
+    document.body.addEventListener('keydown', function(e){
+      if(e.key === 'Tab') document.documentElement.classList.add('user-is-tabbing');
+    });
+  </script>
+</body>
+</html>
